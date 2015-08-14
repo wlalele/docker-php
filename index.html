@@ -31,9 +31,29 @@
         <h1>
 <a id="docker-php" class="anchor" href="#docker-php" aria-hidden="true"><span class="octicon octicon-link"></span></a>Docker PHP</h1>
 
-<p><strong>Docker PHP</strong> (for lack of a better name) is a <a href="http://docker.io/">Docker</a> client written in PHP. This library is still a work in progress. Not much is supported yet, but the goal is to reach 100% API support.</p>
+<p><strong>Docker PHP</strong> (for lack of a better name) is a <a href="http://docker.com/">Docker</a> client written in PHP. This library is still a work in progress. Not much is supported yet, but the goal is to reach 100% API support.</p>
 
-<p>The test suite currently passes against the <a href="http://docs.docker.io/en/latest/api/docker_remote_api_v1.9/">Docker Remote API v1.9</a>.</p>
+<p>The test suite currently passes against the <a href="http://docs.docker.com/reference/api/docker_remote_api_v1.17/">Docker Remote API v1.17</a>.</p>
+
+<p><a href="http://docker-php.readthedocs.org/en/latest/"><img src="https://readthedocs.org/projects/docker-php/badge/?version=latest" alt="Documentation Status"></a> <a href="https://travis-ci.org/stage1/docker-php"><img src="https://travis-ci.org/stage1/docker-php.svg?branch=master" alt="Travis-CI"></a> <a href="https://scrutinizer-ci.com/g/stage1/docker-php/?branch=master"><img src="https://scrutinizer-ci.com/g/stage1/docker-php/badges/quality-score.png?b=master" alt="Scrutinizer Code Quality"></a></p>
+
+<h2>
+<a id="versioning" class="anchor" href="#versioning" aria-hidden="true"><span class="octicon octicon-link"></span></a>Versioning</h2>
+
+<p>There is no <em>stable</em> version yet and the API is rapidly evolving, but we still try to semantically version the library according to <a href="http://semver.org/">semver</a>, but shifted a little bit:</p>
+
+<ul>
+<li>
+<strong>MAJOR</strong> version number stays to 0 until API freeze</li>
+<li>
+<strong>MINOR</strong> version number is incremented when a backward incompatible change is made</li>
+<li>
+<strong>PATCH</strong> version number is incremented when a new feature is added</li>
+</ul>
+
+<p>So basically, if you want the <code>0.5</code> version set, use a version constraint of <code>~0.5.0</code> and you should be fine.</p>
+
+<p>We are <strong>NOT</strong> documenting upgrade procedures until we reach a stable API, please read the code and PRs to keep up with what's going on. You can also ask us for help, we're nice people!</p>
 
 <h2>
 <a id="installation" class="anchor" href="#installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation</h2>
@@ -51,7 +71,7 @@
 <h2>
 <a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage</h2>
 
-<p>See <a href="https://github.com/stage1/docker-php/blob/master/doc/usage.md">the documentation</a>.</p>
+<p>See <a href="http://docker-php.readthedocs.org/en/latest/">the documentation</a>.</p>
 
 <h2>
 <a id="unit-tests" class="anchor" href="#unit-tests" aria-hidden="true"><span class="octicon octicon-link"></span></a>Unit Tests</h2>
