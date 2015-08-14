@@ -4,9 +4,9 @@
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
 
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
 
     <title>Docker-PHP by stage1</title>
   </head>
@@ -29,33 +29,32 @@
     <div class="container">
       <section id="main_content">
         <h1>
-<a name="docker-php" class="anchor" href="#docker-php"><span class="octicon octicon-link"></span></a>Docker PHP</h1>
+<a id="docker-php" class="anchor" href="#docker-php" aria-hidden="true"><span class="octicon octicon-link"></span></a>Docker PHP</h1>
 
 <p><strong>Docker PHP</strong> (for lack of a better name) is a <a href="http://docker.io/">Docker</a> client written in PHP. This library is still a work in progress. Not much is supported yet, but the goal is to reach 100% API support.</p>
 
 <p>The test suite currently passes against the <a href="http://docs.docker.io/en/latest/api/docker_remote_api_v1.9/">Docker Remote API v1.9</a>.</p>
 
 <h2>
-<a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>Installation</h2>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation</h2>
 
 <p>The recommended way to install Docker PHP is of course to use <a href="http://getcomposer.org/">Composer</a>:</p>
 
-<div class="highlight highlight-json"><pre><span class="p">{</span>
-    <span class="nt">"require"</span><span class="p">:</span> <span class="p">{</span>
-        <span class="nt">"stage1/docker-php"</span><span class="p">:</span> <span class="s2">"@dev"</span>
-    <span class="p">}</span>
-<span class="p">}</span>
-</pre></div>
+<div class="highlight highlight-json"><pre>{
+    <span class="pl-s"><span class="pl-pds">"</span>require<span class="pl-pds">"</span></span>: {
+        <span class="pl-s"><span class="pl-pds">"</span>stage1/docker-php<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>@dev<span class="pl-pds">"</span></span>
+    }
+}</pre></div>
 
 <p><strong>Note</strong>: there is no stable version of Docker PHP yet.</p>
 
 <h2>
-<a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h2>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage</h2>
 
 <p>See <a href="https://github.com/stage1/docker-php/blob/master/doc/usage.md">the documentation</a>.</p>
 
 <h2>
-<a name="unit-tests" class="anchor" href="#unit-tests"><span class="octicon octicon-link"></span></a>Unit Tests</h2>
+<a id="unit-tests" class="anchor" href="#unit-tests" aria-hidden="true"><span class="octicon octicon-link"></span></a>Unit Tests</h2>
 
 <p>Setup the test suite using <a href="http://getcomposer.org/">Composer</a>:</p>
 
@@ -68,7 +67,7 @@
 </code></pre>
 
 <h2>
-<a name="contributing" class="anchor" href="#contributing"><span class="octicon octicon-link"></span></a>Contributing</h2>
+<a id="contributing" class="anchor" href="#contributing" aria-hidden="true"><span class="octicon octicon-link"></span></a>Contributing</h2>
 
 <p>Here are a few rules to follow in order to ease code reviews, and discussions before maintainers accept and merge your work.</p>
 
@@ -77,7 +76,9 @@
 <li>You <strong>MUST</strong> run the test suite.</li>
 <li>You <strong>MUST</strong> write (or update) unit tests.</li>
 <li>You <strong>SHOULD</strong> write documentation.</li>
-</ul><p>Please, write <a href="http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html">commit messages that make sense</a>, and <a href="http://git-scm.com/book/en/Git-Branching-Rebasing">rebase your branch</a> before submitting your Pull Request.</p>
+</ul>
+
+<p>Please, write <a href="http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html">commit messages that make sense</a>, and <a href="http://git-scm.com/book/en/Git-Branching-Rebasing">rebase your branch</a> before submitting your Pull Request.</p>
 
 <p>One may ask you to <a href="http://gitready.com/advanced/2009/02/10/squashing-commits-with-rebase.html">squash your commits</a> too. This is used to "clean" your Pull Request before merging it (we don't want commits such as <code>fix tests</code>, <code>fix 2</code>, <code>fix 3</code>, etc.).</p>
 
@@ -86,20 +87,22 @@
 <p>Thank you!</p>
 
 <h2>
-<a name="credits" class="anchor" href="#credits"><span class="octicon octicon-link"></span></a>Credits</h2>
+<a id="credits" class="anchor" href="#credits" aria-hidden="true"><span class="octicon octicon-link"></span></a>Credits</h2>
 
 <p>This README heavily inspired by <a href="https://github.com/willdurand/Negotiation">willdurand/Negotiation</a> by <a href="https://github.com/willdurand" class="user-mention">@willdurand</a>. This guy is pretty awesome.</p>
 
 <h2>
-<a name="projects" class="anchor" href="#projects"><span class="octicon octicon-link"></span></a>Projects</h2>
+<a id="projects" class="anchor" href="#projects" aria-hidden="true"><span class="octicon octicon-link"></span></a>Projects</h2>
 
 <p>Projects known to be using docker-php:</p>
 
 <ul>
 <li>
 <a href="https://github.com/jolicode/JoliCi">JoliCi</a>, Run your tests on different and isolated stacks</li>
-</ul><h2>
-<a name="license" class="anchor" href="#license"><span class="octicon octicon-link"></span></a>License</h2>
+</ul>
+
+<h2>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span class="octicon octicon-link"></span></a>License</h2>
 
 <p>The MIT License (MIT)</p>
 
